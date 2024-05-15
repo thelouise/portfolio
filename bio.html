@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chez Louise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        
+    </head>
+    <style>
+        .maincont {
+            border: 2px solid #E2ADFF; /* Adjust the color and border width as needed */
+            height: 145vh; /* This sets the container height to be 100% of the viewport height */
+            margin: 0 auto; /* Centers the box horizontally */
+            padding: 20px; /* Adds space inside the border */
+            box-sizing: border-box; /* Includes padding and border in the width and height */
+            border-radius: 30px;
+            margin: 100px;
+            margin-top: -4px;
+            margin-bottom: 0px;
+        }
+    </style>
+    <body>
+        
+        <div class="lulu">
+            <a href="louise.html"><img src="imgs/luzz.png" alt=""></a>
+        </div>
+        <div class="maincont" >
+            <div class="navbar">
+                <a href="louise.html" class="nav-link" >About</a>
+                <a href="bio.html"  style="color: #E2ADFF;" class="nav-link" >Bioinformatics</a>
+                <a href="design.html" class="nav-link" >Design</a>
+                <a href="dev.html" class="nav-link" >Web Dev</a>
+            </div> 
+            <div id="content">
+            <div class="container">
+                <div class="box" id="imgcont">
+                    
+                    <img src="imgs/dna2.JPG" id="secondImage">
+                    <img src="imgs/dna3.JPG" id="3rdImage">
+                    <img src="imgs/dna.png" id="firstImage">
+                </div>
+                <div class="box">
+                    <p>   
+                    <span class="title">DNAme</span> <br>
+                    A desktop app that works as a tool to manipulate DNA sequences built by Python<br>
+                    <br><a href="mailto:louizabennoui@gmail.com" target="_blank" style="color: #E2ADFF; font-style: italic;">Request full project</a></p>
+                    
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="container">
+                <div class="box">
+                    <p>
+                        
+                    <span class="title">My DataMiner</span> <br>
+                    A python app that does the datamining process for u : 
+                    Data preprocessing, Cleaning & Clustering
+                    <br>
+                    <br><a href="mailto:louizabennoui@gmail.com" target="_blank" style="color: #E2ADFF; font-style: italic;">Request full project</a></p>
+                </div>
+                <div class="box">                   
+                    <img src="imgs/dm.JPG" style="width: 85%;">
+                </div>
+                
+            </div>
+            <div class="line2"></div>
+        </div>
+        </div>
+        <script>
+            const interval = 3000; // Time each image is shown, in milliseconds
+            let currentImageIndex = 0;
+            const images = document.querySelectorAll('#imgcont img');
+
+            setInterval(() => {
+                // Reset current image's opacity
+                images[currentImageIndex].style.opacity = 0;
+                
+                // Increment or reset the index
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                
+                // Change the opacity of the new current image
+                images[currentImageIndex].style.opacity = 1;
+            }, interval);
+        </script>
+    </body>
+</html>

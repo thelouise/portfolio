@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chez Louise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        
+    </head>
+    <style>
+        .maincont {
+            border: 2px solid #E2ADFF; /* Adjust the color and border width as needed */
+            height: 140vh; /* This sets the container height to be 100% of the viewport height */
+            margin: 0 auto; /* Centers the box horizontally */
+            padding: 20px; /* Adds space inside the border */
+            box-sizing: border-box; /* Includes padding and border in the width and height */
+            border-radius: 30px;
+            margin: 100px;
+            margin-top: -4px;
+            margin-bottom: 0px;
+        }
+
+        .line2 {
+            width: 45%;
+            height: 2px;
+            background-color: #E2ADFF;
+            margin-top: 90px;
+            margin-left: 570px ;
+            margin-bottom: 10px;
+            
+        }
+    </style>
+    <body>
+        
+        <div class="lulu">
+            <a href="louise.html"><img src="imgs/luzz.png" alt=""></a>
+        </div>
+        <div class="maincont" >
+            <div class="navbar">
+                <a href="louise.html" class="nav-link" >About</a>
+                <a href="bio.html"   class="nav-link" >Bioinformatics</a>
+                <a href="design.html" style="color: #E2ADFF;" class="nav-link" >Design</a>
+                <a href="dev.html" class="nav-link" >Web Dev</a>
+            </div> 
+            <div id="content">
+            <div class="container">
+                <div class="box" id="imgcont">
+                    <img src="imgs/bt1.png" id="1Image">
+                    <img src="imgs/bt2.png" id="2Image">
+                    
+                </div>
+                <div class="box">
+                    <p>   
+                    <span class="title">BetterMe: a mobile App</span> <br>
+                    In this Ui Ux design case study, you will discover my thought
+                    process and Ux journey to creating a practical, seamless Ui.  <br>
+                    <br><a href="https://www.notion.so/blouiza/BetterMe-Mobile-App-Design-077596a86e0a476ca54afd1dc26b7350" target="_blank" style="color: #E2ADFF; font-style: italic;">See full project</a></p>
+                    
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="container">
+                <div class="box">
+                    <p>
+                        
+                    <span class="title">Logo Design</span> <br>
+                    Designing Logos is a hobby of mine, I love contributing 
+                    in other people’s goals by creating a unique digital identity 
+                    for their services.
+                    <br>
+                    <br><a href="mailto:louizabennoui@gmail.com" target="_blank" style="color: #E2ADFF; font-style: italic;">Let's work together!</a></p>
+                    
+                </div>
+                <div class="box" id="imgcont">                   
+                    <img src="imgs/id1.png" id="firstImage" style="width: 80%;">
+                    <img src="imgs/id2.png" id="secondImage" style="width: 80%;">
+                    <img src="imgs/id3.png" id="3rdImage" style="width: 80%;">
+                    <img src="imgs/id4.png" id="4thImage" style="width: 80%;">
+                </div>
+                
+            </div>
+            <div class="line2"></div>
+        </div>
+        </div>
+        <script>
+            const interval = 2000; 
+            let currentImageIndex = 0;
+            const images = document.querySelectorAll('#imgcont img');
+
+            setInterval(() => {
+                // Reset current image's opacity
+                images[currentImageIndex].style.opacity = 0;
+                
+                // Increment or reset the index
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                
+                // Change the opacity of the new current image
+                images[currentImageIndex].style.opacity = 1;
+            }, interval);
+
+        </script>
+    </body>
+</html>

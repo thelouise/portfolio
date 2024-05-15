@@ -1,0 +1,192 @@
+body {
+    background-color: #191919;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+
+.lulu{
+    display: flex;
+    justify-content: center;  /* Aligns horizontally */
+    align-items: center;      /* Aligns vertically */
+    padding-left: 15%;
+    margin-top: 20px;
+}
+
+.lulu img{
+    width: 50%; 
+    transition: transform 0.3s ease-in-out;
+}
+.lulu img:hover {
+    transform: translateY(8px);
+}
+
+.lulu img:active {
+    transform: translateY(0);
+}
+
+.maincont {
+    border: 2px solid #E2ADFF; /* Adjust the color and border width as needed */
+    height: 200vh; /* This sets the container height to be 100% of the viewport height */
+    margin: 0 auto; /* Centers the box horizontally */
+    padding: 20px; /* Adds space inside the border */
+    box-sizing: border-box; /* Includes padding and border in the width and height */
+    border-radius: 30px;
+    margin: 100px;
+    margin-top: -4px;
+    margin-bottom: 0px;
+}
+
+.navbar {
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    margin: 0 40px; /* Adds horizontal space between each item */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.navbar a:hover {
+    transform: translateY(-5px);
+}
+
+.navbar a:active {
+    transform: translateY(0);
+}
+
+
+.typewriter {
+    border-right: 3px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blinkCursor 0.75s steps(40) infinite normal;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blinkCursor {
+    from { border-right-color: white; }
+    to { border-right-color: transparent; }
+}
+
+
+
+.about{
+    height: 60px;
+    margin: 60px;
+    padding-right: 50px;
+    margin-left: 50px;
+     
+}
+
+.links{
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 45px;
+    
+}
+.links img{
+    width: 3%;
+}
+
+.links a{
+    margin: 0 20px;
+
+}
+
+.links img{
+    transition: transform 0.3s ease-in-out;
+}
+.links img:hover {
+    transform: translateY(-5px);
+}
+
+.links img:active {
+    transform: translateY(0);
+}
+
+.container {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Horizontally centers the child elements */
+    align-items: center; /* Vertically centers the child elements */
+    margin-top: 150px;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+.box {
+    width: 1500px; /* Set width of each box */
+    height: 150px; /* Set height of each box */
+    margin: 10px; /* Space between boxes */
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    color: white; /* Text color */
+    font-size: 20px; /* Text size */
+    margin-left: 30px;
+    position: relative;
+    
+}
+
+
+.box img{
+    width: 100%;
+    position: absolute; /* Positioned absolutely to overlap */
+    transition: opacity 1s ease-in-out;
+    transition: 0; 
+}
+.box img:first-child {
+    opacity: 1; /* Make only the first image visible initially */
+}
+
+.title {
+    display: block; /* Makes the span behave like a block element */
+    font-size: 30px; /* Larger text for the title */
+    font-weight: bold; /* Bold for emphasis */
+    font-style: italic;
+}
+
+.box p{
+    margin-left: 21px;
+    margin-right: 20px;
+}
+
+.line {
+    width: 45%;
+    height: 2px;
+    background-color: #E2ADFF;
+    margin-top: 100px;
+    margin-left: 70px ;
+}
+
+.line2 {
+    width: 45%;
+    height: 2px;
+    background-color: #E2ADFF;
+    margin-top: 120px;
+    margin-left: 570px ;
+    margin-bottom: 10px;
+    
+}
+
+.box span{
+    transition: transform 0.3s ease-in-out;
+}
+.box span:hover {
+    transform: translateY(-5px);
+}
+
+.box span:active {
+    transform: translateY(0);
+}
+
+

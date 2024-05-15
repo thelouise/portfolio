@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chez Louise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        
+    </head>
+    <style>
+        .maincont {
+            border: 2px solid #E2ADFF; 
+            height: 80vh; 
+            margin: 0 auto; /* Centers the box horizontally */
+            padding: 20px; /* Adds space inside the border */
+            box-sizing: border-box; /* Includes padding and border in the width and height */
+            border-radius: 30px;
+            margin: 100px;
+            margin-top: -4px;
+            margin-bottom: 0px;
+        }
+
+        .line2 {
+            width: 45%;
+            height: 2px;
+            background-color: #E2ADFF;
+            margin-top: 90px;
+            margin-left: 570px ;
+            margin-bottom: 10px;
+        }
+    </style>
+    <body>
+        
+        <div class="lulu">
+            <a href="louise.html"><img src="imgs/luzz.png" alt=""></a>
+        </div>
+        <div class="maincont" >
+            <div class="navbar">
+                <a href="louise.html" class="nav-link" >About</a>
+                <a href="bio.html"   class="nav-link" >Bioinformatics</a>
+                <a href="design.html"  class="nav-link" >Design</a>
+                <a href="dev.html" style="color: #E2ADFF;" class="nav-link" >Web Dev</a>
+            </div> 
+            <div id="content">
+            <div class="container">
+                <div class="box" id="imgcont">
+                    
+                    <img src="imgs/wb2.JPG" id="2Image">
+                    <img src="imgs/wb5.JPG" id="5Image">
+                    <img src="imgs/wb3.JPG" id="3Image">
+                    <img src="imgs/wb4.JPG" id="4Image">
+                    <img src="imgs/wb1.JPG" id="1Image">
+                    
+                    
+                </div>
+                <div class="box">
+                    <p>   
+                    <span class="title">PFE : Bachelor’s Year Project</span> <br>
+                    A dynamic management system for a salon, with a fully functioning
+                    dashboard, built with php, html5 and CSS.
+                    Alongside a static client interface with a reservation system and a
+                    billing system as well.
+                    <br>
+                    <br><a href="mailto:louizabennoui@gmail.com" target="_blank" style="color: #E2ADFF; font-style: italic;">Request thesis</a></p>
+                    
+                </div>
+            </div>
+            <div class="line"></div>
+            
+            
+        </div>
+        </div>
+        <script>
+            const interval = 2000; 
+            let currentImageIndex = 0;
+            const images = document.querySelectorAll('#imgcont img');
+
+            setInterval(() => {
+                // Reset current image's opacity
+                images[currentImageIndex].style.opacity = 0;
+                
+                // Increment or reset the index
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                
+                // Change the opacity of the new current image
+                images[currentImageIndex].style.opacity = 1;
+            }, interval);
+
+        </script>
+    </body>
+</html>
