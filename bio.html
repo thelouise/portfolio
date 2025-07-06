@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chez Louise</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        
+    </head>
+    <style>
+        .maincont {
+            border: 2px solid #E2ADFF; /* Adjust the color and border width as needed */
+            height: 280vh; /* This sets the container height to be 100% of the viewport height */
+            margin: 0 auto; /* Centers the box horizontally */
+            padding: 20px; /* Adds space inside the border */
+            box-sizing: border-box; /* Includes padding and border in the width and height */
+            border-radius: 30px;
+            margin: 100px;
+            margin-top: -4px;
+            margin-bottom: 0px;
+        }
+    </style>
+    <body>
+        
+        <div class="lulu">
+            <a href="louise.html"><img src="imgs/luzz.png" alt=""></a>
+        </div>
+        <div class="maincont" >
+            <div class="navbar">
+                <a href="louise.html" class="nav-link" >About</a>
+                <a href="bio.html"  style="color: #E2ADFF;" class="nav-link" >DataScience</a>
+                <a href="design.html" class="nav-link" >Design</a>
+                <a href="dev.html" class="nav-link" >Other</a>
+            </div> 
+            <div id="content">
+            <div class="container">
+                <div class="box" id="imgcont">
+                    
+                    <img src="imgs/biop1.jpg" id="secondImage">
+                    <img src="imgs/biop2.jpg" id="3rdImage">
+                    <img src="imgs/biop3.jpg" id="firstImage">
+                </div>
+                <div class="box">
+                    <p>   
+                    <span class="title">BioPredict</span> <br>
+                    Designed and developed a bioinformatics system to predict drug molecule bioactivity using machine learning.
+                    Achieved 85% accuracy in classifying molecules as active/inactive.
+                    Used tools such as pandas, scikit-learn, RDKit, and matplotlib for data processing and visualization.<br>
+                    <br><a href="mailto:louizabennoui@gmail.com" target="_blank" style="color: #E2ADFF; font-style: italic;">Request full thesis</a></p>
+                    
+                </div>
+            </div>
+            <div class="line"></div>
+             <div class="container">
+                <div class="box">
+                    <p>
+                        
+                    <span class="title">My DataMiner</span> <br>
+                    Built a Streamlit Data mining app that takes CSV datasets of disease-related records as input.
+                    Performs complete data preprocessing, including cleaning missing values, encoding, normalization etc..
+                    Supports both supervised and unsupervised learning.
+                    Displays interactive visualizations, model performance metrics, and insights to support data exploration and decision-making.
+
+                    <br>
+                    <br><a href="mailto:louizabennoui@gmail.com" target="_blank" style="color: #E2ADFF; font-style: italic;">Request full project</a></p>
+                </div>
+                <div class="box">                   
+                    <img src="imgs/dm.JPG" style="width: 85%;">
+                </div>
+                
+            </div>
+            <div class="line2"></div>
+            <div class="container">
+                <div class="box" id="imgcont">
+                    
+                    <img src="imgs/dna2.JPG" id="secondImage">
+                    <img src="imgs/dna3.JPG" id="3rdImage">
+                    <img src="imgs/dna.png" id="firstImage">
+                </div>
+                <div class="box">
+                    <p>   
+                    <span class="title">DNAme</span> <br>
+                    Developed a lightweight DNA sequence analysis tool to identify genetic patterns or motifs.
+                    Supported input of FASTA-format DNA sequences and performed basic matching, GC content calculation, and sequence cleaning.
+                    Could be extended to detect mutations, generate reverse complements, or simulate transcription.<br>
+                    <br><a href="mailto:louizabennoui@gmail.com" target="_blank" style="color: #E2ADFF; font-style: italic;">Request full project</a></p>
+                    
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="container">
+                <div class="box">
+                    <p>
+                        
+                    <span class="title">Facial Recognition App</span> <br>
+                    Built an app to register, detect, and identify individual faces.
+                    Tracked entry/exit times, supported real-time webcam input.
+                    Included dataset management and facial embeddings using deep learning.
+                    <br>
+                    <br><a href="mailto:louizabennoui@gmail.com" target="_blank" style="color: #E2ADFF; font-style: italic;">Request full project</a></p>
+                </div>
+                <div class="box">                   
+                    <img src="imgs/frapp.jpg" style="width: 70%;">
+                </div>
+                
+            </div>
+            <div class="line2"></div>
+        </div>
+        </div>
+        <script>
+            const interval = 3000; // Time each image is shown, in milliseconds
+            let currentImageIndex = 0;
+            const images = document.querySelectorAll('#imgcont img');
+
+            setInterval(() => {
+                // Reset current image's opacity
+                images[currentImageIndex].style.opacity = 0;
+                
+                // Increment or reset the index
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                
+                // Change the opacity of the new current image
+                images[currentImageIndex].style.opacity = 1;
+            }, interval);
+        </script>
+    </body>
+</html>
